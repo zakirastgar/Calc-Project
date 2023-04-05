@@ -1,6 +1,6 @@
 // IIFE
 
-(function () {
+(function(){
   // Targeting
 
   let screen = document.querySelector(".screen");
@@ -16,5 +16,14 @@
       let userInput = e.target.dataset.num;
       screen.value += userInput;
     })
+  })
+  // Scond Functionality: equal button
+  equal.addEventLister('click', function(e){
+    if(screen.value ==== ""){
+      screen.value = "";
+    }else{
+      let answer = eval(screen.value);
+      screen.value = answer;
+    }
   })
 })();
