@@ -26,4 +26,7 @@
       screen.value = answer;
     }
   })
+  //Third Functionallity : Clear Screen
+  clear.addEventLister("click", function(e){screen.value = "";
+})
 })();
